@@ -377,6 +377,12 @@ body {
     bottom: 0;
 }
 
+.unreadMentionsIndicatorBottom_ef3116 /* server list new pill */,
+.unreadMentionsIndicatorTop_ef3116 {
+    width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2);
+    padding: calc(var(--custom-guild-list-padding) / 2);
+}
+
 #vc-spotify-player /* vencord spotify plugin */ {
     background: none;
 }
@@ -405,6 +411,7 @@ body {
 }
 
 /* improve highlight message left edge */
+.message__5126c.mentioned__5126c::before,
 .replying__5126c::before,
 .ephemeral__5126c::before {
     width: var(--divider-thickness);
@@ -754,6 +761,8 @@ body {
     --accent-4: var(--blue-4); /* accent buttons when hovered */
     --accent-5: var(--blue-5); /* accent buttons when clicked */
     --accent-new: var(--blue-2); /* stuff that's normally red like mute/deafen buttons */
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--blue-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
     --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */
     --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */
 
@@ -1109,11 +1118,15 @@ body {
         --interactive-text-default: var(--text-4);
         --interactive-text-hover: var(--text-3);
         --logo-primary: yellow;
+        --mention-background: color-mix(in hsl, var(--accent-2), transparent 90%);
+        --mention-foreground: var(--accent-1);
         --message-automod-background-default: lime;
         --message-automod-background-hover: blue;
         --message-background-hover: var(--message-hover);
         --message-highlight-background-default: var(--reply);
         --message-highlight-background-hover: var(--reply-hover);
+        --message-mentioned-background-default: var(--mention);
+        --message-mentioned-background-hover: var(--mention-hover);
         --message-reacted-background-default: color-mix(in hsl, var(--accent-2), transparent 80%);
         --message-reacted-text-default: var(--text-2);
         --mobile-background-scrim-opaque: magenta;
@@ -1359,6 +1372,14 @@ body {
     .expandedFolderIconWrapper__48112 > svg[style="color: rgb(88, 101, 242);"] /* folder icon */ {
         color: var(--accent-2) !important;
     }
+    .colorPickerSwatch__459fb[style="background-color: rgb(88, 101, 242);"] /* folder color picker swatch */,
+        .newBadge_faa96b /* forum post new badge */,
+        .mentioned__5126c:before /* mention message left edge */ {
+        background-color: var(--accent-2) !important;
+    }
+    .replying__5126c:before /* reply message left edge */ {
+        background-color: var(--text-2) !important;
+    }
 
     .badge_c3d04b /* shop "orbs exclusive" badge */ {
         background-color: var(--text-1);
@@ -1370,6 +1391,13 @@ body {
 
     .voiceBar__7aaec .barText__7aaec, .voiceChannelsIcon__7aaec /* x in voice bar text */ {
         color: var(--accent-2);
+    }
+
+    .ephemeral__5126c /* ephemeral messages */ {
+        background: var(--mention) !important;
+    }
+    .ephemeral__5126c:hover {
+        background: var(--mention-hover) !important;
     }
 
     .botTagRegular__82f07 /* bot tag */ {
@@ -1533,6 +1561,18 @@ body {
     .icon_c1e9c4 > circle[fill="#C12A35"] /* server settings icon badge */ {
         fill: var(--accent-new) !important;
     }
+
+    .iconBadge__9293f /* icon badge */,
+        .mentionsBar__7aaec /* new mention pill */,
+        .mention__3b95d /* server list new mention pill */,
+        .badge_c99c29 /* inbox badge */ {
+        background-color: var(--accent-new);
+    }
+
+    .mention__3b95d:active {
+        background-color: color-mix(in hsl, var(--accent-new), black 10%);
+    }
+
     .newMessagesBar__0f481 /* unread bar */ {
         background-color: var(--accent-3);
     }
@@ -1858,7 +1898,10 @@ body {
         width: 24px;
         height: 24px;
     }
-    
+    /* shift inbox popup panel into view */
+    .recentMentionsPopout__95796 {
+        transform: translateX(100%);
+    }
     /* fix settings animation transform */
     .layer__960e4.baseLayer__960e4 {
         transform: none !important;
@@ -2263,4 +2306,3 @@ body {
         gap: 0;
     }
 }
-
