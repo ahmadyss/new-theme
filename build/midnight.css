@@ -756,7 +756,7 @@ body {
 
     /* accent colors */
     --accent-1: var(--blue-1); /* links and other accent text */
-    --accent-2: var(--blue-2); /* small accent elements */
+    --blue-2: var(--blue-2); /* small accent elements */
     --accent-3: var(--blue-3); /* accent buttons */
     --accent-4: var(--blue-4); /* accent buttons when hovered */
     --accent-5: var(--blue-5); /* accent buttons when clicked */
@@ -821,7 +821,7 @@ body {
         --background-base-low: var(--bg-4);
         --background-base-lower: var(--bg-4);
         --background-base-lowest: var(--bg-4);
-        --background-brand: var(--accent-2);
+        --background-brand: var(--blue-2);
         --background-code: var(--bg-3);
         --background-code-addition: color-mix(in hsl, var(--green-2), transparent 80%);
         --background-code-deletion: color-mix(in hsl, var(--red-2), transparent 80%);
@@ -842,8 +842,8 @@ body {
         --background-surface-highest: var(--bg-3);
         /* --background-tile-gradient-pink-end: yellow;
         --background-tile-gradient-pink-start: lime; */
-        --badge-background-default: var(--accent-2);
-        --badge-expressive-background-default: var(--accent-2);
+        --badge-background-default: var(--blue-2);
+        --badge-expressive-background-default: var(--blue-2);
         --badge-expressive-text-default: var(--text-0);
         --badge-notification-background: var(--accent-new);
         --badge-text-default: var(--text-0);
@@ -874,7 +874,7 @@ body {
         --checkbox-background-active: blue;
         --checkbox-background-default: var(--bg-2);
         --checkbox-background-hover: var(--bg-1);
-        --checkbox-background-selected-default: var(--accent-2);
+        --checkbox-background-selected-default: var(--blue-2);
         --checkbox-background-selected-hover: var(--accent-3);
         --checkbox-border-active: var(--border);
         --checkbox-border-default: var(--border);
@@ -934,7 +934,7 @@ body {
         --content-inventory-overlay-text-primary: var(--text-2);
         --content-inventory-overlay-text-secondary: var(--text-3);
         --context-menu-backdrop-background: red;
-        --control-brand-foreground: var(--accent-2);
+        --control-brand-foreground: var(--blue-2);
         --control-brand-foreground-new: lime;
         --control-connect-background-active: var(--accent-5);
         --control-connect-background-default: var(--accent-4);
@@ -1096,7 +1096,7 @@ body {
         --icon-voice-muted: var(--accent-new);
         --input-background-default: var(--bg-3);
         --input-background-error-default: color-mix(in hsl, var(--red-2), transparent 90%);
-        --input-border-active: var(--accent-2);
+        --input-border-active: var(--blue-2);
         --input-border-default: var(--border-light);
         --input-border-error-default: var(--red-2);
         --input-border-error-hover: blue;
@@ -1118,7 +1118,7 @@ body {
         --interactive-text-default: var(--text-4);
         --interactive-text-hover: var(--text-3);
         --logo-primary: yellow;
-        --mention-background: color-mix(in hsl, var(--accent-2), transparent 90%);
+        --mention-background: color-mix(in hsl, var(--blue-2), transparent 90%);
         --mention-foreground: var(--accent-1);
         --message-automod-background-default: lime;
         --message-automod-background-hover: blue;
@@ -1127,7 +1127,7 @@ body {
         --message-highlight-background-hover: var(--reply-hover);
         --message-mentioned-background-default: var(--mention);
         --message-mentioned-background-hover: var(--mention-hover);
-        --message-reacted-background-default: color-mix(in hsl, var(--accent-2), transparent 80%);
+        --message-reacted-background-default: color-mix(in hsl, var(--blue-2), transparent 80%);
         --message-reacted-text-default: var(--text-2);
         --mobile-background-scrim-opaque: magenta;
         --mobile-expression-picker-background-default: red;
@@ -1147,7 +1147,7 @@ body {
         --panel-bg: lime;
         --polls-normal-image-background: blue;
         --polls-victor-fill: color-mix(in hsl, var(--green-2), transparent 90%);
-        --polls-voted-fill: color-mix(in hsl, var(--accent-2), transparent 90%);
+        --polls-voted-fill: color-mix(in hsl, var(--blue-2), transparent 90%);
         /* --premium-nitro-pink-text: magenta; */
         --profile-gradient-note-background: red;
         --profile-gradient-overlay: yellow;
@@ -1155,12 +1155,12 @@ body {
         --profile-gradient-role-pill-background: blue;
         --profile-gradient-role-pill-border: magenta;
         --profile-gradient-section-box: red;
-        --progressbar-indicator-background: var(--accent-2);
+        --progressbar-indicator-background: var(--blue-2);
         --progressbar-track-background: var(--bg-2);
         --radio-background-active: var(--bg-1);
         --radio-background-default: var(--bg-2);
         --radio-background-hover: var(--bg-1);
-        --radio-background-selected-default: var(--accent-2);
+        --radio-background-selected-default: var(--blue-2);
         --radio-background-selected-hover: var(--accent-3);
         --radio-border-active: var(--border);
         --radio-border-default: var(--border);
@@ -1230,8 +1230,8 @@ body {
         --switch-background-active: lime;
         --switch-background-default: var(--bg-2);
         --switch-background-hover: var(--bg-2);
-        --switch-background-selected-default: var(--accent-2);
-        --switch-background-selected-hover: var(--accent-2);
+        --switch-background-selected-default: var(--blue-2);
+        --switch-background-selected-hover: var(--blue-2);
         --switch-border-default: var(--border);
         --switch-border-hover: var(--border-hover);
         --switch-border-selected-default: var(--border-light);
@@ -1283,10 +1283,10 @@ body {
         --white: var(--text-0);
         --white-500: var(--text-0);
 
-        --brand-260: var(--accent-2);
-        --brand-360: var(--accent-2);
-        --brand-500: var(--accent-2);
-        --blurple-50: var(--accent-2);
+        --brand-260: var(--blue-2);
+        --brand-360: var(--blue-2);
+        --brand-500: var(--blue-2);
+        --blurple-50: var(--blue-2);
 
         --red-400: var(--red-2);
         --red-500: var(--red-3);
@@ -1370,12 +1370,12 @@ body {
     }
 
     .expandedFolderIconWrapper__48112 > svg[style="color: rgb(88, 101, 242);"] /* folder icon */ {
-        color: var(--accent-2) !important;
+        color: var(--blue-2) !important;
     }
     .colorPickerSwatch__459fb[style="background-color: rgb(88, 101, 242);"] /* folder color picker swatch */,
         .newBadge_faa96b /* forum post new badge */,
         .mentioned__5126c:before /* mention message left edge */ {
-        background-color: var(--accent-2) !important;
+        background-color: var(--blue-2) !important;
     }
     .replying__5126c:before /* reply message left edge */ {
         background-color: var(--text-2) !important;
@@ -1390,7 +1390,7 @@ body {
     }
 
     .voiceBar__7aaec .barText__7aaec, .voiceChannelsIcon__7aaec /* x in voice bar text */ {
-        color: var(--accent-2);
+        color: var(--blue-2);
     }
 
     .ephemeral__5126c /* ephemeral messages */ {
@@ -1401,7 +1401,7 @@ body {
     }
 
     .botTagRegular__82f07 /* bot tag */ {
-        background-color: var(--accent-2);
+        background-color: var(--blue-2);
     }
     .botTagOP__82f07 /* forum post op tag */ {
         color: var(--text-0);
@@ -1427,7 +1427,7 @@ body {
     }
     .container__3f21e.checked__3f21e /* settings checkbutton background */,
     [data-nav-anchor-key="vencord_plugins_category"] .vc-switch-container.vc-switch-checked {
-        background-color: var(--accent-2) !important;
+        background-color: var(--blue-2) !important;
     }
     .container__3f21e .slider__3f21e > svg > path /* settings checkbutton check */,
     .vc-switch-container .vc-switch-slider > svg > path {
@@ -1436,7 +1436,7 @@ body {
     }
     .container__3f21e.checked__3f21e .slider__3f21e > svg > path /* settings checkbutton check */,
     .vc-switch-container.vc-switch-checked .vc-switch-slider > svg > path {
-        fill: var(--accent-2) !important;
+        fill: var(--blue-2) !important;
     }
     .container__3f21e rect[fill='white'] /* settings checkbutton slider */,
     .vc-switch-container .vc-switch-slider rect[fill='white'] {
@@ -1615,7 +1615,7 @@ body {
         display: none;
     }
     .result__2dc39:hover /* gif hover */ {
-        outline: 2px solid var(--accent-2);
+        outline: 2px solid var(--blue-2);
     }
 
     .reactionBtn__23977.forceShow__23977:hover /* fix add reaction button border hover */ {
@@ -1679,7 +1679,7 @@ body {
     }
 
     #vc-spotify-player {
-        --vc-spotify-green: var(--accent-2);
+        --vc-spotify-green: var(--blue-2);
     }
 
     .vcd-screen-picker-option-radio[data-checked='true'] .defaultColor__4bd52 {
@@ -1716,13 +1716,13 @@ body {
             }
 
             .thumb_a28278 > svg path {
-                fill: var(--accent-2);
+                fill: var(--blue-2);
             }
         }
     }
 
     .selectedPill__1464f {
-        border-color: var(--accent-2) !important;
+        border-color: var(--blue-2) !important;
     }
 
     /* Follow channel footer */
